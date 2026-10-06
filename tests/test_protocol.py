@@ -1,7 +1,7 @@
 import importlib.util, pathlib, unittest
 
 spec = importlib.util.spec_from_file_location(
-    "protocol", pathlib.Path(__file__).parent.parent / "custom_components/kamoer_x2sr/protocol.py")
+    "protocol", pathlib.Path(__file__).parent.parent / "custom_components/kamoer_x1_pro_v2_ble_hacs/protocol.py")
 p = importlib.util.module_from_spec(spec); spec.loader.exec_module(p)
 
 

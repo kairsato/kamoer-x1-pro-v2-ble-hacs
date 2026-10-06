@@ -1,4 +1,4 @@
-"""Kamoer X2SR water changer over Bluetooth Low Energy."""
+"""Kamoer X1 Pro V2 water changer over Bluetooth Low Energy."""
 from __future__ import annotations
 
 from homeassistant.components import bluetooth

@@ -3,7 +3,7 @@
     "flow_title": "{name}",
     "step": {
       "user": {
-        "title": "Kamoer X2SR",
+        "title": "Kamoer X1 Pro V2",
         "description": "Pick the pump. Close the Kamoer app first; the pump only allows one Bluetooth connection.",
         "data": {"address": "Pump"}
       },

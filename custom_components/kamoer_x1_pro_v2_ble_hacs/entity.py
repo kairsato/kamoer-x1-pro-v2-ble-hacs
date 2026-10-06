@@ -17,8 +17,8 @@ class KamoerEntity(Entity):
         address = entry.data[CONF_ADDRESS]
         self._attr_unique_id = f"{address}_{key}"
         self._attr_device_info = DeviceInfo(
-            identifiers={(DOMAIN, address)}, name="Kamoer X2SR",
-            manufacturer="Kamoer", model="X2SR", connections={("bluetooth", address)})
+            identifiers={(DOMAIN, address)}, name="Kamoer X1 Pro V2",
+            manufacturer="Kamoer", model="x1 pro v2", connections={("bluetooth", address)})
 
     async def async_added_to_hass(self) -> None:
         self.async_on_remove(self._client.add_listener(self.async_write_ha_state))

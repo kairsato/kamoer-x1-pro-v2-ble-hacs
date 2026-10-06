@@ -1,5 +1,5 @@
-"""Constants for the Kamoer X2SR (Bluetooth) integration."""
-DOMAIN = "kamoer_x2sr"
+"""Constants for the Kamoer X1 Pro V2 (Bluetooth) integration."""
+DOMAIN = "kamoer_x1_pro_v2_ble_hacs"
 
 CONF_ADDRESS = "address"
 CONF_NAME = "name"

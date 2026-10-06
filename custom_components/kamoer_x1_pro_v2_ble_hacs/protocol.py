@@ -1,4 +1,4 @@
-"""Kamoer X2SR BLE wire protocol (reverse-engineered from an HCI snoop capture).
+"""Kamoer X1 Pro V2 BLE wire protocol (reverse-engineered from an HCI snoop capture).
 
 GATT: vendor service 0xFFFF, write characteristic 0xFF01, notify characteristic 0xFF02.
 Frames written to FF01:   4d 00 <seq> <len> <counter:u16le> <body...>

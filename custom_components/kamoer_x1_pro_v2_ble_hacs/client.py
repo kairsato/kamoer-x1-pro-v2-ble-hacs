@@ -1,4 +1,4 @@
-"""BLE client for the Kamoer X2SR.
+"""BLE client for the Kamoer X1 Pro V2.
 
 The pump accepts one connection at a time, so each action opens a session
 (connect, subscribe, startup frames, command, disconnect) and then releases it,
