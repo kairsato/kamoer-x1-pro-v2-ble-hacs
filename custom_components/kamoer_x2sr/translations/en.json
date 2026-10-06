@@ -1,0 +1,17 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Kamoer X2SR",
+        "description": "Pick the pump. Close the Kamoer app first; the pump only allows one Bluetooth connection.",
+        "data": {"address": "Pump"}
+      },
+      "confirm": {"description": "Add the Kamoer pump {name} ({address})?"}
+    },
+    "abort": {
+      "no_devices_found": "No Kamoer pump found nearby.",
+      "already_configured": "This pump is already set up."
+    }
+  }
+}
