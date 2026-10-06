@@ -5,11 +5,13 @@ A Home Assistant custom integration that controls a **Kamoer X1 Pro V2** over **
 > ⚠️ **Experimental.** The protocol was reverse-engineered from one phone capture of the app's flow-calibration screen. The connection handshake and the "set volume" write are verified against that capture. **The dose start/stop commands are not** (see [Status](#status)). Test with the pump's output in a measuring cup, not the tank. Interoperability work on hardware you own; no warranty.
 
 ## Install
-1. HACS → ⋮ → **Custom repositories** → add `https://github.com/kairsato/kamoer-x1-pro-v2-ble-hacs` (category: Integration), then install **Kamoer X1 Pro v2 (Bluetooth)**. Or copy `custom_components/kamoer_x1_pro_v2_ble_hacs` into your HA `config/custom_components/`.
-2. Restart Home Assistant.
-3. The pump (advertises as `KAMOER_X…`) appears under **Settings → Devices & services → Discovered**. Or **Add integration → Kamoer X1 Pro V2 (Bluetooth)**.
+1. Install [HACS](https://hacs.xyz) if you haven't already.
+2. HACS → ⋮ → **Custom repositories** → add `https://github.com/kairsato/kamoer-x1-pro-v2-ble-hacs` (category: Integration).
+3. Find **Kamoer X1 Pro V2 (Bluetooth)** in HACS and **Download** it.
+4. Restart Home Assistant.
+5. Make sure the pump is visible over Bluetooth and Home Assistant has a Bluetooth adapter (or an [ESPHome Bluetooth proxy](https://esphome.io/components/bluetooth_proxy.html)) in range. You can check with your phone: the pump should show up as `KAMOER_*`. **Close the Kamoer phone app first** (force-stop it): the pump allows only one Bluetooth connection.
 
-HA needs a Bluetooth adapter, or an [ESPHome Bluetooth proxy](https://esphome.io/components/bluetooth_proxy.html), in range of the pump. **Close the Kamoer phone app first** (force-stop it): the pump allows only one Bluetooth connection.
+The pump should then appear under **Settings → Devices & services → Discovered**.
 
 ## Entities
 | Entity | What it does |
